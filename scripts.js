@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     // Load sidebar into each page
-    fetch('side_bar.html')
+    fetch('nav.html')
       .then(response => response.text())
       .then(html => {
         const container = document.getElementById('sidebar-container');
