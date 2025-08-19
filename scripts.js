@@ -61,7 +61,7 @@
 // });
 
 // Inject shared sidebar into each page
-fetch('side_bar.html')
+fetch('nav.html')
   .then(response => response.text())
   .then(html => {
     document.getElementById('sidebar').innerHTML = html;
