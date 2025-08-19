@@ -1,31 +1,20 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <aside>
-    <h1>Your Name</h1>
-    <p>Developer • Designer • Creator</p>
-    <nav>
-      <a href="index.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </aside>
-
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>
-        Romana Mahjabin Eshita
-      </p>
-    </section>
-    <footer>© <span id="year"></span> Your Name</footer>
+  <button class="btn btn-primary d-md-none m-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">☰ Menu</button>
+  <div class="offcanvas offcanvas-start bg-dark text-white p-3" tabindex="-1" id="sidebar" style="width:220px;"></div>
+  <main class="flex-grow-1 p-4" style="margin-left:220px;">
+    <h2>About Me</h2>
+    <p>Welcome to my portfolio! Write a short introduction about yourself here.</p>
+    <footer class="text-center mt-5">© <span id="year"></span> Your Name</footer>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
