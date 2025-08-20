@@ -17,8 +17,8 @@ main h2 {
 
 body {
   font-family: system-ui, sans-serif;
-  background: #0f172a;
-  color: #f8fafc;
+  background: #f6f7f6;
+  color: #060606;
 }
 
 main h2 {
@@ -28,6 +28,6 @@ main h2 {
 }
 
 .nav-link.active {
-  background-color: #38bdf8 !important;
+  background-color: #bfe7f8 !important;
   color: #0f172a !important;
 }
