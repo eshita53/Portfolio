@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
   fetch('nav.html')
     .then(response => response.text())
     .then(html => {
-      console.log("Hi")
       const container = document.getElementById('sidebar-container');
       container.innerHTML = html;
       

@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,37 +7,94 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="d-flex">
     <aside class="d-flex flex-column flex-shrink-0 p-3 bg-dark text-white" id="sidebar-container">
     </aside>
+    <main class="flex-grow-1 p-4" id="main-content" style="background: #f4f7f6; font-family: 'Segoe UI', ubuntu;">
+      <h2 class="mb-4" style="color: #2E3A59; border-left: 4px solid #90B08D; padding-left: 10px;">💻 Projects</h2>
 
-    <main class="flex-grow-1 p-4" id="main-content">
-      <h2>Project</h2>
-      <p> VitalDb VitalDB-Monitor </p>
-       <p> This project explores the analysis and visualization of vital signs using VitalDB, an open-source database for physiological monitoring. 
-        The focus is on two critical signals: arterial pressure waves and plethysmography waves. 
-        The project investigates key parameters of these signals and examines their interrelationship. 
-        To present the findings, an interactive dashboard was developed that provides intuitive visualizations of the analysis. 
-        In addition, the dashboard features a live monitoring component, displaying real-time blood pressure and heart rate from streaming data, similar to a clinical patient monitor. </p>
-       <p> github :  https://github.com/eshita53/VitalDB-Monitor.</p>
+      <div class="project-timeline">
 
-        <p> Anomaly Detection </p>
-        <p>This project focuses on analyzing pump sensor data to develop an anomaly detection model capable of identifying abnormal behavior. By detecting irregular patterns in the data, the model enables early problem identification and helps prevent potential system failures.</p>
-        <p>Github: https://github.com/eshita53/Unsupervised-learning/tree/main/Anomaly_detection#anomaly-detection</p>
+        <!-- Project 1 -->
+        <div class="project-item mb-4 p-3 rounded shadow-sm"
+          style="background: #ffffff; border-left: 4px solid #90B08D;">
+          <p class="h5 fw-bold mb-2">VitalDB Monitor</p>
+          <p>This project explores the analysis and visualization of vital signs using VitalDB, an open-source database
+            for physiological monitoring.
+            The focus is on arterial pressure waves and plethysmography waves.
+            An interactive dashboard was developed for intuitive visualizations and live monitoring of real-time blood
+            pressure and heart rate.</p>
+          <a href="https://github.com/eshita53/VitalDB-Monitor" target="_blank"
+            style="text-decoration: none; font-size: 1.5rem; color: #2E3A59;">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
 
-        <p>Identifying Biological Substitutes for Synthetic Compounds Using Clustering
-        </p> 
-        <p> Synthetic products can be harmful to health and the environment, and there is growing interest in replacing them with natural alternatives.
-        In this project, we analyzed two clustering algorithms to identify natural compounds that are structurally similar to synthetic compounds, aiming to find potential substitutes.</p>
-        <p> Github: https://github.com/eshita53/Unsupervised-learning/tree/main/Anomaly_detection#anomaly-detection</p>
-        
-        
+        <!-- Project 2 -->
+        <div class="project-item mb-4 p-3 rounded shadow-sm"
+          style="background: #ffffff; border-left: 4px solid #90B08D;">
+          <p class="h5 fw-bold mb-2">Anomaly Detection</p>
+          <p>This project analyzes pump sensor data to develop an anomaly detection model capable of identifying
+            abnormal behavior. It enables early problem identification and helps prevent potential system failures.</p>
+          <a href="https://github.com/eshita53/Unsupervised-learning/tree/main/Anomaly_detection#anomaly-detection"
+            target="_blank" style="text-decoration: none; font-size: 1.5rem; color: #2E3A59;">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
 
-      <footer class="text-center mt-5">© <span id="year"></span> Romana Mahjabin Eshita</footer>
+        <!-- Project 3 -->
+        <div class="project-item mb-4 p-3 rounded shadow-sm"
+          style="background: #ffffff; border-left: 4px solid #90B08D;">
+          <p class="h5 fw-bold mb-2">Identifying Biological Substitutes for Synthetic Compounds Using Clustering</p>
+          <p>Synthetic products can be harmful to health and the environment. This project analyzes clustering
+            algorithms to identify natural compounds structurally similar to synthetic compounds, aiming to find
+            potential substitutes.</p>
+          <a href="https://github.com/eshita53/Unsupervised-learning/tree/main/Anomaly_detection#anomaly-detection"
+            target="_blank" style="text-decoration: none; font-size: 1.5rem; color: #2E3A59;">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Footer -->
+      <footer class="text-center mt-5 text-muted">
+        © <span id="year"></span> Romana Mahjabin Eshita
+      </footer>
     </main>
+
+    <style>
+      .project-timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .project-item:hover {
+        transform: translateY(-3px);
+        transition: 0.3s ease;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      a:hover {
+        color: #90B08D;
+      }
+    </style>
+
+    <!-- Font Awesome CDN for GitHub icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+    <script>
+      // Auto-update year in footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="scripts.js"></script>
 </body>
+
 </html>

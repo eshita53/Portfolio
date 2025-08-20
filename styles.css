@@ -1,28 +1,13 @@
-/* body {
-  font-family: system-ui, sans-serif;
-  background: #0f172a;
-  color: #f8fafc;
-}
 
-main h2 {
-  border-bottom: 2px solid #38bdf8;
-  padding-bottom: 0.3rem;
-  margin-bottom: 1rem;
-}
-
-.nav-link.active {
-  background-color: #38bdf8 !important;
-  color: #0f172a !important;
-} */
 
 body {
-  font-family: system-ui, sans-serif;
-  background: #f6f7f6;
+  font-family: system-ui, ubuntu;
+  background: #90B08D;
   color: #060606;
 }
 
 main h2 {
-  border-bottom: 2px solid #38bdf8;
+  border-bottom: 2px solid #90B08D;
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
 }

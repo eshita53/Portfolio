@@ -10,25 +10,54 @@
   <div class="d-flex">
     <aside class="d-flex flex-column flex-shrink-0 p-3 bg-dark text-white" id="sidebar-container">
     </aside>
-    <main class="flex-grow-1 p-4" id="main-content">
-      <h2>Education</h2>
-
-      <div class="mb-4">
-        <p class="fw-bold mb-1">Sep 2023 – Aug 2025</p>
-        <p class="mb-1">Data Science for Life Science (Master’s Program)</p>
-        <p class="text-muted">Hanze University of Applied Sciences</p>
+    <main class="flex-grow-1 p-4" id="main-content" style="background: #f4f7f6; font-family: 'Segoe UI', ubuntu;">
+      <h2 class="mb-4" style="color: #2E3A59; border-left: 4px solid #90B08D; padding-left: 10px;">🎓 Education</h2>
+    
+      <!-- Timeline Container -->
+      <div class="timeline">
+    
+        <!-- Education Item 1 -->
+        <div class="timeline-item mb-4 p-3 rounded shadow-sm" style="background: #ffffff; border-left: 4px solid #90B08D;">
+          <p class="fw-bold mb-1" style="color: #90B08D;">Sep 2023 – Aug 2025</p>
+          <p class="mb-1 h5">Data Science for Life Science <span style="font-size: 0.9rem; color: #6c757d;">(Master’s Program)</span></p>
+          <p class="text-muted mb-0">Hanze University of Applied Sciences</p>
+        </div>
+    
+        <!-- Education Item 2 -->
+        <div class="timeline-item mb-4 p-3 rounded shadow-sm" style="background: #ffffff; border-left: 4px solid #90B08D;">
+          <p class="fw-bold mb-1" style="color: #90B08D;">Jan 2016 – Feb 2020</p>
+          <p class="mb-1 h5">B.Sc. (Engineering) in Computer Science</p>
+          <p class="text-muted mb-0">Shahjalal University of Science and Technology (SUST), Sylhet, Bangladesh</p>
+        </div>
       </div>
-
-      <div class="mb-4">
-        <p class="fw-bold mb-1">Jan 2016 – Feb 2020</p>
-        <p class="mb-1">B.Sc. (Engineering) in Computer Science</p>
-        <p class="text-muted">Shahjalal University of Science and Technology (SUST), Sylhet, Bangladesh</p>
-      </div>
-     
-      <footer class="text-center mt-5">
+    
+      <!-- Footer -->
+      <footer class="text-center mt-5 text-muted">
         © <span id="year"></span> Romana Mahjabin Eshita
       </footer>
     </main>
+    
+    <style>
+      .timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      .timeline-item:hover {
+        transform: translateY(-3px);
+        transition: 0.3s ease;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      }
+      h2::before {
+        content: " ";
+      }
+    </style>
+    
+    <script>
+      // Auto-update year in footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="scripts.js"></script>
