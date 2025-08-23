@@ -1,13 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Load sidebar into each page
-  fetch('nav.html')
-    .then(response => response.text())
-    .then(html => {
-      const container = document.getElementById('sidebar-container');
-      container.innerHTML = html;
-      
-      setTimeout(highlightActiveLink, 0); // ensure DOM update
-    });
+  highlightActiveLink();
 
   // Set current year in footer
   document.querySelectorAll('#year').forEach(el => 
