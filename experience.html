@@ -10,56 +10,90 @@
   <div class="d-flex">
     <aside class="d-flex flex-column flex-shrink-0 p-3 bg-dark text-white" id="sidebar-container">
     </aside>
-    <main class="flex-grow-1 p-4" id="main-content">
-      <h2>Experience</h2>
-
-      <div class="mb-4">
-        <p class="fw-bold mb-1">Mar 2025 – Aug 2025</p>
-        <p class="mb-1">Internship | University Medical Center Groningen</p>
-        <ul>
-          <li>Improving the prediction performance of logistic regression-based NTCP model for pneumonia in esophageal cancer patients through radiomics integration.</li>
-          <li>Extracted radiomics features from pretreatment CT scans using PyRadiomics and developed logistic regression-based NTCP models for pneumonia prediction.</li>
-          <li>Compared model performance across radiomics-only, clinical-only, and combined feature approaches.</li>
-          <li>Evaluated model performance and analyzed feature importance for each approach.</li>
-        </ul>
+    <main class="flex-grow-1 p-4" id="main-content" style="background: #f4f7f6; font-family: 'Segoe UI', ubuntu;">
+      <h2 class="mb-4" style="color: #2E3A59; border-left: 4px solid #90B08D; padding-left: 10px;">💼 Experience</h2>
+    
+      <!-- Timeline Container -->
+      <div class="timeline">
+    
+        <!-- Experience Item 1 -->
+        <div class="timeline-item mb-4 p-3 rounded shadow-sm" style="background: #ffffff; border-left: 4px solid #90B08D;">
+          <p class="fw-bold mb-1" style="color: #90B08D;">Mar 2025 – Aug 2025</p>
+          <p class="mb-1 h5">Internship | University Medical Center Groningen</p>
+          <ul>
+            <li>Improved prediction performance of logistic regression-based NTCP model for pneumonia in esophageal cancer patients through radiomics integration.</li>
+            <li>Extracted radiomics features from pretreatment CT scans using PyRadiomics and developed logistic regression-based NTCP models.</li>
+            <li>Compared model performance across radiomics-only, clinical-only, and combined feature approaches.</li>
+            <li>Evaluated model performance and analyzed feature importance for each approach.</li>
+          </ul>
+        </div>
+    
+        <!-- Experience Item 2 -->
+        <div class="timeline-item mb-4 p-3 rounded shadow-sm" style="background: #ffffff; border-left: 4px solid #90B08D;">
+          <p class="fw-bold mb-1" style="color: #90B08D;">Dec 2024 – Mar 2025</p>
+          <p class="mb-1 h5">Student Assistant | University of Groningen</p>
+          <ul>
+            <li>Developed solutions for automated code evaluation to improve efficiency.</li>
+            <li>Contributed to front-end development to optimize user experience.</li>
+          </ul>
+        </div>
+    
+        <!-- Experience Item 3 -->
+        <div class="timeline-item mb-4 p-3 rounded shadow-sm" style="background: #ffffff; border-left: 4px solid #90B08D;">
+          <p class="fw-bold mb-1" style="color: #90B08D;">Jan 2022 – Aug 2022</p>
+          <p class="mb-1 h5">Project Assistant | eKYC and Blockchain Project</p>
+          <ul>
+            <li>Worked on a Blockchain Empowered e-KYC and Reputation System.</li>
+            <li>Conducted research on Verifiable Credentials.</li>
+          </ul>
+        </div>
+    
+        <!-- Experience Item 4 -->
+        <div class="timeline-item mb-4 p-3 rounded shadow-sm" style="background: #ffffff; border-left: 4px solid #90B08D;">
+          <p class="fw-bold mb-1" style="color: #90B08D;">Mar 2020 – Mar 2021</p>
+          <p class="mb-1 h5">
+            Project Assistant | 
+            <a href="https://subsel.org/" target="_blank" style="text-decoration: none; color: #2E3A59;">SUBSEL</a> 
+            <small class="text-muted">(Shahjalal University Blockchain and Security Laboratory)</small>
+          </p>
+          <ul>
+            <li>Developed a blockchain-based dynamic identity federation.</li>
+            <li>Modified SimpleSAMLphp to allow parties to join the federation in real time.</li>
+            <li>Implemented blockchain components using Hyperledger Fabric.</li>
+          </ul>
+        </div>
       </div>
-
-      <div class="mb-4">
-        <p class="fw-bold mb-1">Dec 2024 – Mar 2025</p>
-        <p class="mb-1">Student Assistant | University of Groningen</p>
-        <ul>
-          <li>Developed solutions for automated code evaluation to improve efficiency.</li>
-          <li>Contributed to front-end development to optimize user experience.</li>
-        </ul>
-      </div>
-
-      <div class="mb-4">
-        <p class="fw-bold mb-1">Jan 2022 – Aug 2022</p>
-        <p class="mb-1">Project Assistant | eKYC and Blockchain Project</p>
-        <ul>
-          <li>Worked on a Blockchain Empowered e-KYC and Reputation System.</li>
-          <li>Conducted research on Verifiable Credentials.</li>
-        </ul>
-      </div>
-
-      <div class="mb-4">
-        <p class="fw-bold mb-1">Mar 2020 – Mar 2021</p>
-        <p class="mb-1">
-          Project Assistant | 
-          <a href="https://subsel.org/" target="_blank">SUBSEL</a> 
-          <small class="text-muted">(Shahjalal University Blockchain and Security Laboratory)</small>
-        </p>
-        <ul>
-          <li>Developed a blockchain-based dynamic identity federation.</li>
-          <li>Modified SimpleSAMLphp to allow parties to join the federation in real time.</li>
-          <li>Implemented blockchain components using Hyperledger Fabric.</li>
-        </ul>
-      </div>
-
-      <footer class="text-center mt-5">
+    
+      <!-- Footer -->
+      <footer class="text-center mt-5 text-muted">
         © <span id="year"></span> Romana Mahjabin Eshita
       </footer>
     </main>
+    
+    <style>
+      .timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      .timeline-item:hover {
+        transform: translateY(-3px);
+        transition: 0.3s ease;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      }
+      h2::before {
+        content: " ";
+      }
+      a:hover {
+        color: #90B08D;
+      }
+    </style>
+    
+    <script>
+      // Auto-update year in footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="scripts.js"></script>

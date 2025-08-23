@@ -8,24 +8,41 @@
 </head>
 <body>
   <div class="d-flex">
-    <aside class="d-flex flex-column flex-shrink-0 p-3 bg-dark text-white" id="sidebar-container">
+  
+  <aside class="d-flex flex-column flex-shrink-0 p-3 bg-dark text-white" id="sidebar-container">
     </aside>
 
-    <main class="flex-grow-1 p-4" id="main-content">
-      <h2>Hello, I'm Eshita</h2>
-      <p>
-        I am a Data Science graduate with a background in Computer Science. I am passionate about transforming complex data into actionable insights that drive informed decisions.
-      </p>
-      <p>
-        I focus on designing efficient data pipelines, analyzing large-scale datasets, and developing intuitive, impactful dashboards.
-        I also love developing predictive models to uncover hidden patterns and solve real-world problems.
-      </p>
-      <p>
-      I am always looking for exciting projects to work on. Please feel free to connect with me to discuss new opportunities or collaborations.    
-      </p>
-      <p>Page-specific content goes here.</p>
-      <footer class="text-center mt-5">© <span id="year"></span> Romana Mahjabin Eshita</footer>
+    <main class="flex-grow-1 p-4" id="main-content" style="background: #f4f7f6; font-family: 'Segoe UI', ubuntu;">
+    
+      <div class="about-container" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start;">
+        <!-- Profile Image -->
+        <div class="profile-img" style="flex: 1; min-width: 250px; text-align: center;">
+          <img src="img/about-me.png" alt="Eshita" 
+               style="width: 100%; max-width: 400px; height: auto; border-radius: 12px; border: 2px solid #90B08D; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        </div>
+    
+        <!-- About Text -->
+        <div class="about-text" style="flex: 2; min-width: 250px;padding-top: 100px;font-size: 1.5rem;">
+          <p>I am a <strong>Data Science graduate</strong> with a background in Computer Science. I am passionate about transforming complex data into actionable insights that drive informed decisions.</p>
+    
+          <p>I focus on designing efficient data pipelines, analyzing large-scale datasets, and developing <strong>intuitive, impactful dashboards</strong>. I also enjoy developing predictive models to uncover hidden patterns and solve real-world problems.</p>
+    
+          <p>I am always looking for <strong>exciting projects</strong> to work on. Please feel free to connect with me to discuss new opportunities or collaborations.</p>
+          
+        </div>
+      </div>
+    
+      <footer class="text-center mt-5 text-muted">
+        © <span id="year"></span> Romana Mahjabin Eshita
+      </footer>
     </main>
+    
+    <script>
+      // Auto-update year in footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    
+    
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="scripts.js"></script>
