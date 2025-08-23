@@ -1,35 +1,87 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eshita's Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
+
 <body>
   <div class="d-flex">
-    <aside class="d-flex flex-column flex-shrink-0 p-3 bg-dark text-white" id="sidebar-container">
+    <aside class="d-flex flex-column flex-shrink-0 p-3 bg-dark text-white"
+    style="width: 250px; height: 100vh; position: sticky; top: 0;" id="sidebar-container">
+      <!-- Profile Section -->
+      <div class="d-flex flex-column align-items-center mb-4">
+        <!-- Round photo placeholder -->
+        <div class="rounded-circle d-flex align-items-center justify-content-center overflow-hidden"
+          style="width: 125px; height: 125px;">
+          <img src="img/me.jpg" alt="Romana Mahjabin Eshita" class="img-fluid">
+        </div>
+        <!-- Name -->
+        <h6 class="mt-3">Romana Mahjabin Eshita</h6>
+      </div>
+
+      <!-- Navigation -->
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link text-white">
+            <i class="bi bi-person-circle me-2"></i> About
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="education.html" class="nav-link text-white">
+            <i class="bi bi-mortarboard me-2"></i> Education
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="experience.html" class="nav-link text-white">
+            <i class="bi bi-briefcase me-2"></i> Experience
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="projects.html" class="nav-link text-white">
+            <i class="bi bi-code-slash me-2"></i> Projects
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="skills.html" class="nav-link text-white">
+            <i class="bi bi-lightning me-2"></i> Skills
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link text-white">
+            <i class="bi bi-envelope me-2"></i> Contact
+          </a>
+        </li>
+      </ul>
     </aside>
     <main class="flex-grow-1 p-4" id="main-content" style="background: #f4f7f6; font-family: 'Segoe UI', ubuntu;">
       <h2 class="mb-4" style="color: #2E3A59; border-left: 4px solid #90B08D; padding-left: 10px;">💼 Experience</h2>
-    
+
       <!-- Timeline Container -->
       <div class="timeline">
-    
+
         <!-- Experience Item 1 -->
-        <div class="timeline-item mb-4 p-3 rounded shadow-sm" style="background: #ffffff; border-left: 4px solid #90B08D;">
+        <div class="timeline-item mb-4 p-3 rounded shadow-sm"
+          style="background: #ffffff; border-left: 4px solid #90B08D;">
           <p class="fw-bold mb-1" style="color: #90B08D;">Mar 2025 – Aug 2025</p>
           <p class="mb-1 h5">Internship | University Medical Center Groningen</p>
           <ul>
-            <li>Improved prediction performance of logistic regression-based NTCP model for pneumonia in esophageal cancer patients through radiomics integration.</li>
-            <li>Extracted radiomics features from pretreatment CT scans using PyRadiomics and developed logistic regression-based NTCP models.</li>
+            <li>Improved prediction performance of logistic regression-based NTCP model for pneumonia in esophageal
+              cancer patients through radiomics integration.</li>
+            <li>Extracted radiomics features from pretreatment CT scans using PyRadiomics and developed logistic
+              regression-based NTCP models.</li>
             <li>Compared model performance across radiomics-only, clinical-only, and combined feature approaches.</li>
             <li>Evaluated model performance and analyzed feature importance for each approach.</li>
           </ul>
         </div>
-    
+
         <!-- Experience Item 2 -->
-        <div class="timeline-item mb-4 p-3 rounded shadow-sm" style="background: #ffffff; border-left: 4px solid #90B08D;">
+        <div class="timeline-item mb-4 p-3 rounded shadow-sm"
+          style="background: #ffffff; border-left: 4px solid #90B08D;">
           <p class="fw-bold mb-1" style="color: #90B08D;">Dec 2024 – Mar 2025</p>
           <p class="mb-1 h5">Student Assistant | University of Groningen</p>
           <ul>
@@ -37,9 +89,10 @@
             <li>Contributed to front-end development to optimize user experience.</li>
           </ul>
         </div>
-    
+
         <!-- Experience Item 3 -->
-        <div class="timeline-item mb-4 p-3 rounded shadow-sm" style="background: #ffffff; border-left: 4px solid #90B08D;">
+        <div class="timeline-item mb-4 p-3 rounded shadow-sm"
+          style="background: #ffffff; border-left: 4px solid #90B08D;">
           <p class="fw-bold mb-1" style="color: #90B08D;">Jan 2022 – Aug 2022</p>
           <p class="mb-1 h5">Project Assistant | eKYC and Blockchain Project</p>
           <ul>
@@ -47,13 +100,14 @@
             <li>Conducted research on Verifiable Credentials.</li>
           </ul>
         </div>
-    
+
         <!-- Experience Item 4 -->
-        <div class="timeline-item mb-4 p-3 rounded shadow-sm" style="background: #ffffff; border-left: 4px solid #90B08D;">
+        <div class="timeline-item mb-4 p-3 rounded shadow-sm"
+          style="background: #ffffff; border-left: 4px solid #90B08D;">
           <p class="fw-bold mb-1" style="color: #90B08D;">Mar 2020 – Mar 2021</p>
           <p class="mb-1 h5">
-            Project Assistant | 
-            <a href="https://subsel.org/" target="_blank" style="text-decoration: none; color: #2E3A59;">SUBSEL</a> 
+            Project Assistant |
+            <a href="https://subsel.org/" target="_blank" style="text-decoration: none; color: #2E3A59;">SUBSEL</a>
             <small class="text-muted">(Shahjalal University Blockchain and Security Laboratory)</small>
           </p>
           <ul>
@@ -63,39 +117,43 @@
           </ul>
         </div>
       </div>
-    
+
       <!-- Footer -->
       <footer class="text-center mt-5 text-muted">
         © <span id="year"></span> Romana Mahjabin Eshita
       </footer>
     </main>
-    
+
     <style>
       .timeline {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
       }
+
       .timeline-item:hover {
         transform: translateY(-3px);
         transition: 0.3s ease;
-        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
       }
+
       h2::before {
         content: " ";
       }
+
       a:hover {
         color: #90B08D;
       }
     </style>
-    
+
     <script>
       // Auto-update year in footer
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
-    
+
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="scripts.js"></script>
 </body>
+
 </html>
